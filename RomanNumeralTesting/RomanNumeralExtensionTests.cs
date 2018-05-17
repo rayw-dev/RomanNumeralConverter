@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using RomanNumeralConverter;
 
-namespace RomanNumeralConverter
+namespace RomanNumeralTesting
 {
     [TestClass]
     public class RomanNumeralExtensionTests
@@ -50,6 +51,13 @@ namespace RomanNumeralConverter
         [TestMethod]
         public void FromRomanTests()
         {
+            string nullTest = null;
+            Assert.AreEqual(0, nullTest.FromRoman(), "null: Bad Roman Test Failed");
+            Assert.AreEqual(0, string.Empty.FromRoman(), "string empty: Bad Roman Test Failed");
+            Assert.AreEqual(0, " ".FromRoman(), "whitespace empty: Bad Roman Test Failed");
+            Assert.AreEqual(0, "   ".FromRoman(), "whitespace empty 3 spaces: Bad Roman Test Failed");
+            Assert.AreEqual(0, "Some Old Scrap".FromRoman(), "Some Old Scrap: Bad Roman Test Failed");
+            Assert.AreEqual(0, "Some Old Scrap".FromRoman(), "Some Old Scrap: Bad Roman Test Failed");
             Assert.AreEqual(0, "Some Old Scrap".FromRoman(), "Some Old Scrap: Bad Roman Test Failed");
             Assert.AreEqual(0, "0".FromRoman(), "0: Bad Roman Test Failed");
             Assert.AreEqual(0, "1".FromRoman(), "1: Bad Roman Test Failed");

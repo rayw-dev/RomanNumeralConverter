@@ -58,6 +58,7 @@ namespace RomanNumeralConverter
         #region FromRoman
         public static int FromRoman(this string roman)
         {
+            if (string.IsNullOrWhiteSpace(roman)) return 0;
             var total = 0;
             var lastMilestone = RomanNumeralMilestone.I;
             for (var i = roman.Length - 1; i >= 0; i--)
