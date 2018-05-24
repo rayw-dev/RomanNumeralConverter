@@ -84,11 +84,21 @@ namespace RomanNumeralTesting
             Assert.AreEqual(9, "ix".FromRoman(), "9 (ix) Failed");
             Assert.AreEqual(10, "X".FromRoman(), "10 (X) Failed");
             Assert.AreEqual(10, "x".FromRoman(), "10 (x) Failed");
+            Assert.AreEqual(14, "XIV".FromRoman(), "14 (XIV) Failed");
+            Assert.AreEqual(14, "xiv".FromRoman(), "14 (xiv) Failed");
+            Assert.AreEqual(14, "XIIII".FromRoman(), "14 (XIIII) Failed");
+            Assert.AreEqual(14, "xiiii".FromRoman(), "14 (xiiii) Failed");
+            Assert.AreEqual(24, "XXIV".FromRoman(), "24 (XXIV) Failed");
+            Assert.AreEqual(24, "xxiv".FromRoman(), "24 (xxiv) Failed");
+            Assert.AreEqual(24, "XXIIII".FromRoman(), "24 (XXIIII) Failed");
+            Assert.AreEqual(24, "xxiiii".FromRoman(), "24 (xxiiii) Failed");
             Assert.AreEqual(1977, "MCMLXXVII".FromRoman(), "1977 (MCMLXXVII) Failed");
             Assert.AreEqual(1977, "mcmlxxvii".FromRoman(), "1977 (mcmlxxvii) Failed");
             Assert.AreEqual(1977, "McMLXxViI".FromRoman(), "1977 (McMLXxViI) Failed");
             Assert.AreEqual(1984, "MCMLXXXIV".FromRoman(), "1984 (MCMLXXXIV) Failed");
+            Assert.AreEqual(1984, "MCMLXXXIIII".FromRoman(), "1984 (MCMLXXXIIII) Failed");
             Assert.AreEqual(1984, "mcmlxxxiv".FromRoman(), "1984 (mcmlxxxiv) Failed");
+            Assert.AreEqual(1984, "mcmlxxxiiii".FromRoman(), "1984 (mcmlxxxiiii) Failed");
             Assert.AreEqual(2012, "MMXII".FromRoman(), "2012 (MMXII) Failed");
             Assert.AreEqual(2012, "MMxII".FromRoman(), "2012 (MMxII) Failed");
 
