@@ -70,6 +70,8 @@ namespace RomanNumeralTesting
             Assert.AreEqual(3, "iii".FromRoman(), "3 (iii) Failed");
             Assert.AreEqual(4, "IV".FromRoman(), "4 (IV) Failed");
             Assert.AreEqual(4, "iv".FromRoman(), "4 (iv) Failed");
+            Assert.AreEqual(4, "IIII".FromRoman(), "4 (IIII) Failed");
+            Assert.AreEqual(4, "iiii".FromRoman(), "4 (iiii) Failed");
             Assert.AreEqual(5, "V".FromRoman(), "5 (V) Failed");
             Assert.AreEqual(5, "v".FromRoman(), "5 (v) Failed");
             Assert.AreEqual(6, "VI".FromRoman(), "6 (VI) Failed");
